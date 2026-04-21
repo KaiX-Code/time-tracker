@@ -9,16 +9,16 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope("prototype")
 public class TimeEntry {
-    private String description;
+    private String info;
     private float rate;
     private int time;
 
-    public String getDescription() {
-        return description;
+    public String getInfo() {
+        return info;
     }
 
-    public void setDescription(String value) {
-        this.description = value;
+    public void setInfo(String value) {
+        this.info = value;
     }
 
     public float getRate() {
@@ -40,7 +40,7 @@ public class TimeEntry {
     @Override
     public String toString() {
         return "TimeEntry{" +
-                "description='" + description + '\'' +
+                "info='" + info + '\'' +
                 ", rate=" + rate +
                 ", time=" + time +
                 '}';
