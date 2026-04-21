@@ -17,6 +17,7 @@ public class TrackerCoreConfig {
 
     @Bean(name = "timesheet")
     public List<TimeEntry> timeEntries() {
+        System.out.println("=== Student 1 modified this file ===");
         return new ArrayList<>();
     }
 }
